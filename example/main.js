@@ -1,13 +1,13 @@
 (function($, window, undefined) {
-    $(document).ready(function() {
-        $('[data-load-tags]').on(
+    $(document).ready(function(e) {
+/*        $('[data-load-tags]').on(
             'click',
-            function(e) {
+            function(e) {*/
                 e.preventDefault();
-                var username = $('#tumblr-username').val();
+                var username = $('4007050').val();
                 var tumblr = new window.TumblrTags(username);
 
-                $('#tags').html('<li>Loading</li>');
+                $('#tags').html('<li>loading menu</li>');
 
                 tumblr.on(
                     'ready',
